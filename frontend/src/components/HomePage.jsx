@@ -6,6 +6,7 @@ import BeatLoader from 'react-spinners/BeatLoader';
 import { ThemeContext } from '../context/ThemeContext';
 
 export default function HomePage() {
+
   const [protein, setProtein] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
@@ -16,9 +17,10 @@ export default function HomePage() {
     e.preventDefault();
     setLoading(true);
     try {
-      const response = await axios.post('http://localhost:8000/api/discover', {
+      const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/discover`, {
         protein_name: protein
       });
+          
       navigate('/results', { state: { results: response.data } });
     } catch (err) {
       setError(err.response?.data?.detail || 'Discovery failed');
