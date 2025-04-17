@@ -12,7 +12,7 @@ MoleculeAI is an intelligent platform designed to assist in **drug discovery** u
 - **Backend:** Python (Flask / FastAPI)
 - **ML Libraries:** scikit-learn, RDKit, TensorFlow/PyTorch (VAE, Fragment-Based Generator)
 - **Data Sources:** ChEMBL, STRING DB
-- **Deployment:** Render / Vercel / Heroku (as applicable)
+- **Deployment:** Vercel
 
 ---
 
