@@ -1,4 +1,6 @@
-# 🧬 Introduction
+# MoleculeAI 🔬💊
+
+## 🧬 Introduction
 
 MoleculeAI is an intelligent platform designed to assist in **drug discovery** using advanced machine learning models. It generates novel molecules, retrieves bioactivity data, and predicts their drug-likeness through ADMET analysis, ultimately helping researchers find potential candidates faster and more efficiently.
 
